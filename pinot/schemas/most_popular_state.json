@@ -1,0 +1,11 @@
+{
+  "schemaName": "most_popular_state",
+  "dimensionFieldSpecs": [
+    { "name": "artistid", "dataType": "STRING" },
+    { "name": "state",    "dataType": "STRING" }
+  ],
+  "metricFieldSpecs": [
+    { "name": "cnt",      "dataType": "LONG" }
+  ],
+  "dateTimeFieldSpecs": []
+}

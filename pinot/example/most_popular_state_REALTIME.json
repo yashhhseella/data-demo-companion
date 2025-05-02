@@ -1,0 +1,31 @@
+{
+  "tableName": "most_popular_state_REALTIME",
+  "tableType": "REALTIME",
+  "segmentsConfig": {
+    "timeColumnName": "timestamp",
+    "schemaName": "most_popular_state",
+    "replication": "1",
+    "replicasPerPartition": "1",
+    "timeType": "MINUTES"
+  },
+  "tenants": {
+    "broker": "DefaultTenant",
+    "server": "DefaultTenant",
+    "tagOverrideConfig": {}
+  },
+  "tableIndexConfig": {
+    "streamConfigs": {
+      "streamType": "kafka",
+      "stream.kafka.topic.name": "data-demo-streams",
+      "stream.kafka.broker.list": "localhost:9092",
+      "stream.kafka.decoder.class.name": "org.apache.pinot.plugin.stream.kafka.KafkaJSONMessageDecoder"
+    },
+    "aggregateMetrics": true
+  },
+  "metadata": {},
+  "quota": {},
+  "routing": {},
+  "query": {},
+  "ingestionConfig": {},
+  "isDimTable": false
+}
