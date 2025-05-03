@@ -5,7 +5,14 @@
     { "name": "state",    "dataType": "STRING" }
   ],
   "metricFieldSpecs": [
-    { "name": "cnt",      "dataType": "LONG" }
+    { "name": "count",      "dataType": "LONG" }
   ],
-  "dateTimeFieldSpecs": []
+  "dateTimeFieldSpecs": [
+    {
+      "name": "timestamp",
+      "dataType": "TIMESTAMP",
+      "format": "1:MILLISECONDS:EPOCH",
+      "granularity": "1:MILLISECONDS"
+    }
+  ]
 }

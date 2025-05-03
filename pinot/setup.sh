@@ -34,6 +34,8 @@ pinot schema artist
 pinot schema ticket
 pinot schema event
 pinot schema stream
+pinot schema most_popular_state
+
 
 #
 # kafka topics must exist before the tables are created in pinot, since tables also define where the data is coming from
@@ -47,6 +49,7 @@ kt --create --if-not-exists --partitions 4 --topic data-demo-artists
 kt --create --if-not-exists --partitions 4 --topic data-demo-tickets
 kt --create --if-not-exists --partitions 4 --topic data-demo-events
 kt --create --if-not-exists --partitions 4 --topic data-demo-streams
+kt --create --if-not-exists --partitions 4 --topic data-demo-most_popular_states
 
 pinot table venue
 pinot table email
@@ -57,4 +60,6 @@ pinot table artist
 pinot table ticket
 pinot table event
 pinot table stream
+pinot table most_popular_state
+
 
